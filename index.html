@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <!-- Conectamos el archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <nav class="navbar">
+            <h1>Geometry Dash</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre el tema</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- PORTADA / HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <p class="pequeno">DESCUBRE ALGO NUEVO</p>
+                <h2>Todo sobre <span>Geometry Dash</span></h2>
+                <p>
+                    Aquí puedes poner una frase corta que explique
+                    de qué trata tu página web.
+                </p>
+                <a href="https://gdladder.com/profile/47454" class="boton" target="_blank" rel="noopener noreferrer">
+    Ver mi perfil
+</a>
+            </div>
+        </section>
+        <!-- SOBRE EL TEMA -->
+        <section id="sobre" class="sobre">
+            <div class="imagen">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXOaE-0PW8H6jE_1iMPHz18fe50WKwSg0HX2JYandxig&s=10"
+                     alt="Imagen relacionada con el tema">
+            </div>
+            <div class="texto">
+                <p class="etiqueta">CONOCE MÁS</p>
+                <h2>¿Qué es <span>Geometry Dash</span>?</h2>
+                <p>
+                    Geometry Dash es un juego de plataformas rítmico en el que los jugadores controlan un icono que se mueve automáticamente a través de niveles llenos de obstáculos. El objetivo es saltar y esquivar los obstáculos al ritmo de la música para completar cada nivel.
+                </p>
+                <p>
+                    Se juega principalmente en dispositivos móviles y PC, y es conocido por su dificultad y la posibilidad de crear niveles personalizados. Los jugadores pueden desbloquear nuevos iconos y colores a medida que avanzan en el juego. Algunas personas también disfrutan de la comunidad en línea, donde pueden compartir y jugar niveles creados por otros usuarios.
+                </p>
+            </div>
+        </section>
+        <!-- GALERÍA / CONTENIDO -->
+        <section id="contenido" class="contenido">
+            <div class="titulo-seccion">
+                <p class="etiqueta">INFORMACIÓN</p>
+                <h2>Algunos niveles</h2>
+                <p>
+                    Estos son algunos niveles de Geometry Dash:
+                </p>
+            </div>
+            <div class="tarjetas">
+                <!-- TARJETA 1 -->
+                <article class="tarjeta">
+                    <div class="numero">01</div>
+                    <h3>Lit Fuse</h3>
+                    <p>
+                        Fue creado por el jugador KrmaL en la versión 2.0 del juego y tiene dificultad insane demon. Su gameplay combina timings difíciles, spam y nave. Es bastante icónico por su final. Es el nivel más difícil que me he pasado hasta la fecha.
+                    </p>
+                    <iframe
+                      src="https://www.youtube.com/embed/e8f1SGxkAk0"
+                      title="Vídeo de YouTube"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                </article>
+                <!-- TARJETA 2 -->
+                <article class="tarjeta">
+                    <div class="numero">02</div>
+                    <h3>Grief</h3>
+                    <p>
+                        Creado en la versión 2.2 por muchos creadores de niveles talentosos como IcedCave o Tacos, es el nivel más difícil del juego, con dificultad extreme demon. Tiene un gameplay muy difícil, con timings imposibles y spam. Su dificultad es tan alta que solo un puñado de jugadores han logrado completarlo y es considerado practicamente imposible de superar.
+                    </p>
+                    <iframe
+                      src="https://www.youtube.com/embed/jYXxoDywnAE"
+                      title="Vídeo de YouTube"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                </article>
+                <!-- TARJETA 3 -->
+                <article class="tarjeta">
+                    <div class="numero">03</div>
+                    <h3>Sonic Wave</h3>
+                    <p>
+                        Lo creó el jugador Cyclic en la versión 1.9 con el objetivo de ser el nivel más dificil del juego. Sin embargo, el nivel era demasiado difícil para los jugadores de la época. Con el tiempo los jugadores fueron mejorando y llegaron al nivel de habilidad necesario para pasárselo. El gameplay es, principalmente, de wave aunque cuenta con otros modos de juego. Su decoración es de estilo "nine circles" que era muy popular en su época.
+                    </p>
+                    <iframe
+                      src="https://www.youtube.com/embed/FCQYvLDsLAE"
+                      title="Vídeo de YouTube"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                </article>
+            </div>
+        </section>
+        <!-- FORMULARIO -->
+        <section id="contacto" class="contacto">
+            <div class="contacto-texto">
+                <p class="etiqueta">CONTACTO</p>
+                <h2>¿Tienes alguna pregunta?</h2>
+                <p>
+                    Puedes utilizar este formulario para ponerte
+                    en contacto con nosotros.
+                </p>
+            </div>
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@email.com"
+                        required
+                    >
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje..."
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <h2>MI TEMA</h2>
+            <p>
+                Una página web creada para el proyecto de TIC.
+            </p>
+        </div>
+        <div class="footer-enlaces">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre el tema</a>
+            <a href="#contenido">Contenido</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <p class="copyright">
+            © 2026 Mi página web. Proyecto de TIC.
+        </p>
+    </footer>
+</body>
+</html>
